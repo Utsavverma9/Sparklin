@@ -58,7 +58,7 @@ def in_server(guild_id: int) -> Check[Context]:
 
 def in_support_server() -> Check[Context]:
     def predicate(ctx: Context) -> bool:
-        """Returns True if the guild is support server itself (SECTOR 17-29)."""
+        """Returns True if the guild is support server itself (Sparklin-bot-support_server)."""
 
         if ctx.guild.id == ctx.bot.server.id:
             return True
@@ -89,7 +89,7 @@ def is_guild_owner() -> Check[Context]:
 
 def is_me() -> Check[Context]:
     async def predicate(ctx: Context) -> bool:
-        if ctx.message.author.id == SUPER_USER:  # `!! Ritik Ranjan [*.*]#9230`
+        if ctx.message.author.id == SUPER_USER:  # `!! Utsav Verma [*.*]`
             return True
         raise ex.NotMe()
 
