@@ -572,8 +572,8 @@ class Sector1729(Cog):
         await ctx.tick()
 
     # Thanks
-    #   - `aastha_ok`    (AASTHA#1206 - 925315596818718752)
-    #   - `sourcandy_zz` (Sour Candy#8301 - 966599206880030760)
+   
+    #   - `Utsav` (utsav_x_professnal - 1206549100330356738 )
     @sector_17_29_add.command(name="adjective", aliases=["adj", "adjectives"])
     @commands.has_any_role(SERVER_MOD, CORE_MAINTAINER_ROLE)
     @commands.cooldown(1, 300, commands.BucketType.guild)
@@ -622,7 +622,7 @@ class Sector1729(Cog):
 
                 {table}
 
-                **In file: [`/extra/adjectives.txt`](https://github.com/rtk-rnjn/Parrot/blob/main/extra/adjectives.txt)**
+                **In file: [`/extra/adjectives.txt`](https://github.com/Utsavverma9/Sparklin.git)**
 
                 ---
 
