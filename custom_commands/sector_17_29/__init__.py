@@ -395,17 +395,17 @@ class Sector1729(Cog):
 
         await self.bot._execute_webhook(webhook=self.message_delete_webhook, file=file)
 
-    @commands.group(name="sector", aliases=["sector1729", "sector17"], invoke_without_command=True)
+    @commands.group(name="Laboratory", aliases=["Laboratory110", "Laboratory110"], invoke_without_command=True)
     async def sector_17_29(self, ctx: Context):
-        """Commands related to SECTOR 17-29."""
+        """Commands related to HeartyLaboratory 1-10."""
         if not ctx.invoked_subcommand:
             await ctx.bot.invoke_help_command(ctx)
 
     @sector_17_29.command(name="info", aliases=["about"])
     async def sector_17_29_about(self, ctx: Context):
-        """Information about the SECTOR 17-29."""
+        """Information about the HeartyLaboratory 1-10."""
         description = (
-            f"SECTOR 17-29 is support server of the bot (Parrot) and formely a "
+            f"HeartyLaboratory 1-10 is support server of the bot (Sparklin) and formely a "
             f"community server for the stream Beasty Stats.\n"
             f"[Click here]({self.bot.support_server}) to join the server"
         )
