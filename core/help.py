@@ -183,7 +183,7 @@ class FrontPageSource(menus.PageSource):
             embed.add_field(
                 name="Who are you?",
                 value=(
-                    r"The bot made by `@ritik.ranjan` (ritik) formerly know as `!! Ritik Ranjan [*.*]#9230`. Built with love and `discord.py`! Bot been running since "
+                    r"The bot made by `@utsav.verma` (utsav) formerly know as `!! Utsav Verma [*.*]`. Built with love and `discord.py`! Bot been running since "
                     f"{created_at}. Bot have features such as moderation, global-chat, and more. You can get more "
                     "information on my commands by using the dropdown below.\n\n"
                     f"Bot is also open source. You can see the code on [GitHub]({self.bot.github})!"
@@ -209,8 +209,8 @@ class FrontPageSource(menus.PageSource):
             )
 
             embed.add_field(
-                name="How do I use this bot?",
-                value="Reading the bot signature is pretty simple.",
+                name="How do I use this Sparklin bot?",
+                value="Reading the Sparklin bot signature is pretty simple.",
             )
 
             for name, value in entries:
@@ -247,7 +247,7 @@ class PaginatedHelpCommand(commands.HelpCommand):
         super().__init__(
             command_attrs={
                 "cooldown": commands.CooldownMapping.from_cooldown(1, 3.0, commands.BucketType.member),
-                "help": "Shows help about the bot, a command, or a category",
+                "help": "Shows help about the Sparklin bot, a command, or a category",
             },
         )
         self.__all_commands: dict[Cog, list[commands.Command]] = {}
