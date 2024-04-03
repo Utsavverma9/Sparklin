@@ -12,7 +12,7 @@ TIPS = [
     "BOT IS OPEN SOURCE! <https://github.com/Utsavverma9/Sparklin.git>",
     "If you forget what's the prefix, just mention the bot.",
     "Bot is still in development. If you find any bugs, please report it.",
-    "There exists a support server for this bot. <https://discord.gg/JUcdP3ShUDR>. You can also report bugs there.",
+    "There exists a support server for this bot. <https://discord.gg/r8dJTqN2Kc>. You can also report bugs there.",
     "Sparklin's privacy policy: <https://github.com/Utsavverma9/Sparklin/blob/749140be7e05c547cdec1b73546a232c14287c40/PRIVACY_POLICY.md>",
     "This underrated bot is owned by Utsav.verma, want to buy it?",
     "You can suggest new features for this bot in the support server. The bot developer will give you credit if your idea is implemented. ^.^",
