@@ -60,4 +60,4 @@ pm2 start pm2.json
 
 ---
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b9a3a8eb17a3421bb96a5ea3648f4767)](https://app.codacy.com/gh/rtk-rnjn/Parrot/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
