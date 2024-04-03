@@ -81,7 +81,7 @@ intents.message_content = True
 dbl_token = os.environ["TOPGG"]
 
 CHANGE_LOG_ID = CHANGE_LOG_CHANNEL_ID
-DEFAULT_PREFIX: Literal["$"] = "$"
+DEFAULT_PREFIX: Literal["$S"] = "$S"
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -293,7 +293,7 @@ class Parrot(commands.AutoShardedBot):
 
             class A:
                 id = SUPPORT_SERVER_ID  # noqa: A003
-                name = "SECTOR 17-29"
+                name = "Sparklin-bot-support-server"
 
             return A()
         return guild
