@@ -14,7 +14,7 @@ from core import Cog, Context, Parrot
 from discord.ext import commands
 
 TOKEN_REGEX = re.compile(r"[a-zA-Z0-9_-]{23,28}\.[a-zA-Z0-9_-]{6,7}\.[a-zA-Z0-9_-]{27,}")
-DISCORD_PY_ID = 336642139381301249
+DISCORD_PY_ID = 1224602787921264712
 
 
 class GistContent:
