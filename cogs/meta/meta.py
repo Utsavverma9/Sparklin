@@ -324,7 +324,7 @@ class Meta(Cog):
         commit_tz = arrow.now().to("local").tzinfo
         commit_time = commit_time.astimezone(commit_tz)
         offset = discord.utils.format_dt(commit_time, "R")
-        return f"[`{short_sha2}`](https://github.com/rtk-rnjn/Parrot/commit/{commit_hex}) {commit['commit']['message']} ({offset})"
+        return f"[`{short_sha2}`](https://github.com/Utsavverma9/Sparklin/commit/{commit_hex}) {commit['commit']['message']} ({offset})"
 
     def get_last_commits(self, count=3) -> str | None:
         # check if the `.git` directory exists
@@ -335,7 +335,7 @@ class Meta(Cog):
         return "\n".join(self.format_commit(c) for c in commits)
 
     async def get_last_commits_async(self, count: int = 3):
-        repo = "rtk-rnjn/Parrot"
+        repo = "Utsavverma9/Sparklin"
         url = f"https://api.github.com/repos/{repo}/commits"
 
         async with self.bot.http_session.get(url) as response:
@@ -480,7 +480,7 @@ class Meta(Cog):
         url = self.bot.invite
         em: discord.Embed = (
             discord.Embed(
-                title="Thank you for choosing Parrot!",
+                title="Thank you for choosing Sparklin!",
                 description=f"```ini\n[Default Prefix: `@{self.bot.user}`]\n```\n**Bot Owned and created by `{self.bot.author_name}`**",
                 url=url,
                 timestamp=discord.utils.utcnow(),
@@ -608,7 +608,7 @@ class Meta(Cog):
     async def request(self, ctx: Context, *, text: str):
         """To request directly from the owner."""
         view = await ctx.prompt(
-            f"{ctx.author.mention} are you sure want to request for the same. Abuse of this feature may result in ban from using Parrot bot. Press `YES` to continue",
+            f"{ctx.author.mention} are you sure want to request for the same. Abuse of this feature may result in ban from using Sparklin bot. Press `YES` to continue",
         )
         if view is None:
             await ctx.reply(f"{ctx.author.mention} you did not responds on time. No request is being sent!")
@@ -806,7 +806,7 @@ class Meta(Cog):
         if gist:
             headers["Authorization"] = f"token {gist.token}"
 
-        repo = "rtk-rnjn/Parrot"
+        repo = "Utsavverma9/Sparklin"
         api = f"https://api.github.com/repos/{repo}/contributors"
 
         response = await self.bot.http_session.get(api, headers=headers)
