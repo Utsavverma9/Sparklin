@@ -309,7 +309,7 @@ class Configuration(Cog):
     @commands.has_permissions(administrator=True)
     @Context.with_type
     async def djrole(self, ctx: Context, *, role: discord.Role = None):
-        """To set dj role of the server. People with dj role can accesss the DJ power of Parrot.
+        """To set dj role of the server. People with dj role can accesss the DJ power of Sparklin.
         By default the dj functionality works on the basis of permission that is (Manage Channel).
         """
         post = {"dj_role": role.id if role else None}
