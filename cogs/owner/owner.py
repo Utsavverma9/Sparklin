@@ -143,7 +143,7 @@ class Owner(Cog, command_attrs={"hidden": True}):
         await self.bot.ban_user(user_id=user.id, **payload)
         try:
             await user.send(
-                f"{user.mention} you are banned from using Parrot bot. Reason: {reason}\n\nContact `{self.bot.author_name}` for unban.",
+                f"{user.mention} you are banned from using Sparklin bot. Reason: {reason}\n\nContact `{self.bot.author_name}` for unban.",
                 view=ctx.send_view(),
             )
             await ctx.tick()
@@ -163,7 +163,7 @@ class Owner(Cog, command_attrs={"hidden": True}):
         await self.bot.unban_user(user_id=user.id)
         try:
             await user.send(
-                f"{user.mention} you are unbanned. You can now use Parrot bot.\n\nContact `{self.bot.author_name}` for any queries.",
+                f"{user.mention} you are unbanned. You can now use Sparklin bot.\n\nContact `{self.bot.author_name}` for any queries.",
                 view=ctx.send_view(),
             )
             await ctx.tick()
@@ -336,7 +336,7 @@ class Owner(Cog, command_attrs={"hidden": True}):
     async def dm(self, ctx: Context, user: discord.User, *, reply: str):
         """Reply to the DM."""
         now = discord.utils.utcnow()
-        msg = """## This is automated message from developer of Parrot bot.\n"""
+        msg = """## This is automated message from developer of Sparklin bot.\n"""
         msg += f"> **{ctx.author}**: _{reply.strip(' ')}_.\n"
         msg += "\n"
         msg += f"### Today at {discord.utils.format_dt(now)} ({discord.utils.format_dt(now, 'R')})"
